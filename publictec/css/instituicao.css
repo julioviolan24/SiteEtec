@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 4rem;
+}
+
+.navbar-brand1 {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.navbar-nav{
+    margin: 0 auto; /* Define as margens laterais como automáticas para centralizar */
+    display: flex; /* Ativa o modelo de layout flexível */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Espaçamento entre os itens do menu */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-family: 'Lato' sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+    transition: 0.8s;
+}
+
+a.img img.logo {
+    /*Tamanho da logo do menu*/
+    width: 70px;
+    /*Largura da logo do menu*/
+    height: auto;
+    /*Espaçamento da margem da logo*/
+    margin: 5px;
+}
+
+/*Retirando a borda do botão responsivo do menu*/
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .dark-banner {
+    filter: brightness(40%);
+    /*Abaixa um pouco do brilho da imagem*/
+}
+
+.texts {
+
+    position: absolute;
+    top: 50%;
+    /* Coloca o elemento no centro verticalmente */
+    left: 50%;
+    /* Coloca o elemento no centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Move o elemento para o centro */
+    text-align: justify;
+    /* Centraliza o conteúdo */
+}
+
+.primeira-sessao {
+    background-color: #f6f7f9;
+    text-align: center;
+}
+
+#search {
+    border-radius: 50px;
+    border: none;
+    height: 55px;
+    width: 350px;
+    text-align: center;
+}
+
+.segunda-sessao p{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+.espaco {
+    margin-bottom: 170px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons svg {
+    width: 30px;
+    height: 30px;
+    fill: #212529;
+}
+
+.footer img {
+    width: 110px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.autoria {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 770px) {
+
+    *{
+        max-width: 100%;
+    }
+    
+    .banner {
+        display: flex;
+    }
+
+    .banner img {
+        width: 100%;
+        /* Define a largura da imagem para ocupar toda a largura do contêiner */
+        height: 500px;
+        /* Altura fixa para manter a proporção */
+        object-fit: cover;
+        /* Ajusta a imagem para cobrir o contêiner */
+    }
+
+    .texts {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .texts h2 {
+        font-size: 18px;
+    }
+
+    .banner a {
+        height: 40px;
+        width: 300px;
+    }
+
+    .segunda-sessao p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .autoria, .social-icons{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+}
